@@ -1,0 +1,57 @@
+@import "../styles/Vars.scss";
+
+.home {
+  background: $bg;
+  color: $text-color;
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+
+  .title-containter {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    padding: 5rem 0;
+
+    button {
+      align-self: self-start;
+      padding: 2rem 4rem;
+      font-family: "Inter";
+      font-size: 1.9rem;
+      color: $text-color;
+      background-color: $orange-button;
+    }
+  }
+
+  .home-title {
+    font-size: 11.1rem;
+    line-height: 90%;
+  }
+
+  .description {
+    font-family: "Figtree", sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.6;
+  }
+  .image-container {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 50%;
+
+    .flower {
+      width: 90%;
+    }
+    .cartoon {
+      position: absolute;
+      z-index: 10;
+      top: 13rem;
+      background: #000000;
+      border-radius: 50%;
+      width: 30rem;
+      height: 30rem;
+      object-fit: cover;
+      border: 8px solid pink;
+    }
+  }
+}

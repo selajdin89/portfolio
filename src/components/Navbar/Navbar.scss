@@ -1,0 +1,28 @@
+@import "../styles/Vars.scss";
+
+.navbar {
+  font-family: "Inter";
+  background: $bg-navbar;
+  color: $text-color;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      padding: 1rem;
+    }
+
+    .button {
+      background-color: rgba(187, 202, 214, 0.15);
+    }
+  }
+}
